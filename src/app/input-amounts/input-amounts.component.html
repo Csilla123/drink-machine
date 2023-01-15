@@ -1,0 +1,23 @@
+<div class="inputs">
+    <div class = "amount" matTooltip="Odd money"><p>Your amount: {{cashBack}}Ft</p></div>
+    <div class="progress-bar">
+        <mat-progress-bar mode="determinate"  color="warn" [value]="progressbarValue"></mat-progress-bar>
+    </div>
+    <div class = "coins">
+        <div class="coin five"  (click)="addAmount(5);"></div>
+        <div class="coin ten" (click)="addAmount(10);"></div>
+        <div class="coin twenty" (click)="addAmount(20);"></div>
+        <div class="coin fifty" (click)="addAmount(50);"></div>
+        <div class="coin one-hundred" (click)="addAmount(100);"></div>
+        <div class="coin two-hundred" (click)="addAmount(200);"></div>
+    </div>
+    <div class = "bank-notes">
+        <div class="bank-note five-hundred" (click)="addAmount(500);"></div>
+        <div class="bank-note one-tousand" (click)="addAmount(1000);"></div>
+    </div>
+    <div class ="buttons">
+        <button mat-raised-button color="primary" (click)="nextDrink();"  matTooltip="Clears the balance and 'your amount' fileds before the next customer's shopping.">Next</button>
+        <button mat-raised-button color="warn" (click)="resetMachine();" matTooltip="Resets the content of the slots and container to their initial states.">Reset</button>
+    </div>
+</div>
+

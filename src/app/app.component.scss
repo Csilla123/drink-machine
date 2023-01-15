@@ -1,0 +1,43 @@
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1px 20px;
+    background-color: beige;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 4px;
+
+    header {
+        position: relative;
+        margin: 0px 0px 20px 0px;
+        height: 80px;
+        background-image: url("/assets/coffee.jpg");
+        opacity: 0.5;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 4px;
+        font-size: 1.5rem;
+    }
+
+    .title {
+        text-align: center;
+        line-height: 80px;
+        color: #00000091;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-block-start: 1rem;
+    }
+
+    .help {
+        position: absolute;
+        top: 0.6rem;
+        right: 0.5rem;
+
+        .mat-icon {
+            color: #bf9b51;
+        }
+    }
+
+}

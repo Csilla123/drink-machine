@@ -1,0 +1,19 @@
+<mat-accordion>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <mat-icon>local_drink</mat-icon>
+            </mat-panel-title>
+            <mat-panel-description>
+                {{panelOpenState?"Hide":"Show"}} stuff
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="drinks">
+            <div class="drink" *ngFor = "let drink of drinks"  (click)="addDrink(drink);">
+                <img [src]="drink.src" [alt]="drink.name"  width="60px" height="80px">
+                <div class="cost" >{{drink.cost}}Ft</div>
+            </div>
+        </div>
+    </mat-expansion-panel>
+</mat-accordion>

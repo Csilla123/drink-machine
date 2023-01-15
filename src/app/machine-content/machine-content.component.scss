@@ -1,0 +1,13 @@
+.content {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    .mat-expansion-panel {
+        background-color: beige;
+    }
+
+    .mat-expansion-panel-body {
+        padding: 5px;
+    }
+}

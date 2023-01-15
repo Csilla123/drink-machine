@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>
+    Reset drink machine
+</h1>
+
+<div mat-dialog-content class="content">
+    <p>This action will clear the machine container and slots and set to their initial state.
+        Do you want to continue?</p>
+</div>
+
+<mat-dialog-actions align="end">
+    <button mat-raised-button color="primary" mat-dialog-close>Cancel</button>
+    <button mat-raised-button color="warn" [mat-dialog-close]="true" cdkFocusInitial>Continue</button>
+</mat-dialog-actions>
